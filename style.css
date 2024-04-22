@@ -26,6 +26,21 @@ body
     display: flex;
 }
 
+h2.titulo
+{
+    color: black;
+    font-size: 55px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+h2.titulo span
+{
+    color: #002395;
+    font-weight: 600;
+}
+
+
 /* CABEÇALHO */
 
 header > .interface
@@ -61,6 +76,7 @@ header nav ul li
     padding: 0 80px;
 }
 
+
 /* TOPO DO SITE */
 
 section.topo_do_site
@@ -78,7 +94,7 @@ section.topo_do_site .flex
 .topo_do_site .texto_topo h1
 {
     color:#002395;
-    font-size: 50px;
+    font-size: 75px;
 }
 
 .topo_do_site .texto_topo p 
@@ -91,7 +107,134 @@ section.topo_do_site .flex
     border-radius: 100px;
 }
 
-.sobre_mim .interface h2 
+
+/* SOBRE MIM */
+
+section.sobre_mim
 {
-    color:#002395;
+    padding: 35px 4%;
+}
+
+.sobre_mim .logo_escolas 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+/* EXPERIÊNCIAS */
+
+section.experiencias
+{
+    padding: 35px 4%;
+}
+
+
+/* HABILIDADES */
+
+section.habilidades
+{
+    padding: 35px 4%;
+}
+
+/* FORMULÁRIO */
+
+section.formulario
+{
+    padding: 60px 4%;
+}
+
+form
+{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea 
+{
+    width: 100%;
+    background-color:#51609088;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+form textarea 
+{
+    resize:none;
+}
+
+form .botao_enviar 
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .botao_enviar input[type=submit]
+{
+    width: 100px;
+    background-color: #002395;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+form .botao_enviar input:hover
+{
+    color:rgb(5, 106, 201);
+    transform: scale(1.07);
+}
+
+
+/* RODAPÉ */
+
+footer
+{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #002395;
+}
+
+footer .flex
+{
+    justify-content: space-between;
+}
+
+footer .botao_contatos button
+{
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #002395;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+
+}
+
+footer .linha_rodape i
+{
+    padding: 2px;
+}
+
+footer .linha_rodape p i
+{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+
+footer .linha_rodape p a 
+{
+    color: black;
 }
